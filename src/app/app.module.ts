@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BandListComponent } from './components/band-list/band-list.component';
+import { BandDetailsComponent } from './components/band-details/band-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    BandListComponent
+    BandListComponent,
+    BandDetailsComponent
   ],
   imports: [
     BrowserModule,

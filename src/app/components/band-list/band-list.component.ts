@@ -16,7 +16,7 @@ export class BandListComponent implements OnInit {
   }
   onSelect(band: Band): void {
     this.selectedBand = band;
-    console.log('banda seleccionada' + this.selectedBand.id);
+    console.log(this.selectedBand.name);
   }
 
   ngOnInit(): void {
