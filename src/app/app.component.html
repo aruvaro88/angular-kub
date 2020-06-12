@@ -3,3 +3,12 @@
   Angular Rocks
 </a>
 </nav>
+
+<div *ngFor="let band of bands">
+  <ul>
+    <li>
+      <h1>{{band.name}}</h1>
+      <p>{{band.description}}</p>
+    </li>
+  </ul>
+</div>
