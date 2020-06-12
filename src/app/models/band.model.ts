@@ -4,5 +4,6 @@ export interface Band{
     description: string,
     foundation: number,
     members: string[],
-    hit: string
+    hit: string,
+    imgURL: string
 }

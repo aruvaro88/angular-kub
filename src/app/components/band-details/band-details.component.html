@@ -1,3 +1,7 @@
-<div *ngIf="band">
-  <h1>{{band.foundation}}</h1>
+<div class="container">
+  <div *ngIf="band">
+    <h1>{{band.name}}</h1>
+    <p>{{band.description}}</p>
+  </div>
+  <button (click)="goBack()">Back</button>
 </div>

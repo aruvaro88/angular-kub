@@ -9,4 +9,8 @@ export class BandService {
   getBands() {
     return BANDS;
   }
+
+  getOneBand(id:number) {
+    return BANDS.find(band => band.id === id);
+  }
 }

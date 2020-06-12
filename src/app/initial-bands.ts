@@ -8,6 +8,7 @@ export const BANDS: Band[] = [
     foundation: 1962,
     members: ['Mick Jagger', 'Keith Richards', 'Charlie Watts', 'Ronnie Wood'],
     hit: 'Paint it black',
+    imgURL: "https://res.cloudinary.com/daxdpwqbb/image/upload/v1591970765/angular%20rocks/rolling-stones_newyj3.jpg"
   },
   {
     id: 2,
@@ -17,6 +18,8 @@ export const BANDS: Band[] = [
     foundation: 1968,
     members: ['Robert Plant', 'Jimmy Page', 'John Paul Jones', 'John Bonham'],
     hit: 'Starway to heaven',
+    imgURL: "https://res.cloudinary.com/daxdpwqbb/image/upload/v1591970764/angular%20rocks/led-zeppelin_tl8smv.jpg"
+
   },
   {
     id: 3,
@@ -26,6 +29,8 @@ export const BANDS: Band[] = [
     foundation: 1970,
     members: ['Freddie Mercury', 'Brian May', 'Roger Taylor', 'John Deacon'],
     hit: 'Bohemian Rhapsody',
+    imgURL: "https://res.cloudinary.com/daxdpwqbb/image/upload/v1591970765/angular%20rocks/queen_kkmxgz.jpg"
+
   },
   {
     id: 4,
@@ -42,6 +47,8 @@ export const BANDS: Band[] = [
       'David Gilmour',
     ],
     hit: 'The Wall',
+    imgURL: "https://res.cloudinary.com/daxdpwqbb/image/upload/v1591970764/angular%20rocks/pink-floyd_xholdg.jpg"
+
   },
   {
     id: 5,
@@ -51,6 +58,8 @@ export const BANDS: Band[] = [
     foundation: 1973,
     members: ['Angus Young', 'Malcolm Young', 'Brian Johnson', 'Phil Rudd'],
     hit: 'Highway to hell',
+    imgURL: "https://res.cloudinary.com/daxdpwqbb/image/upload/v1591970765/angular%20rocks/acdc_mffufq.jpg"
+
   },
   {
     id: 6,
@@ -60,6 +69,8 @@ export const BANDS: Band[] = [
     foundation: 1974,
     members: ['Joey Ramone', 'Johnny Ramone', 'Marky Ramone', 'C.J Ramone'],
     hit: 'Blitzkireg Bop',
+    imgURL: "https://res.cloudinary.com/daxdpwqbb/image/upload/v1591970765/angular%20rocks/ramones_zixkzx.jpg"
+
   },
   {
     id: 7,
@@ -69,5 +80,17 @@ export const BANDS: Band[] = [
     foundation: 1973,
     members: ['Paul Stanley', 'Gene Simmons', 'Eric Singer', 'Tommy Thayer'],
     hit: 'Detroit Rock City',
+    imgURL: "https://res.cloudinary.com/daxdpwqbb/image/upload/v1591970765/angular%20rocks/kiss_varzjm.jpg"
+
   },
+  {
+    id: 8,
+    name: 'Deep Purple',
+    description:
+      'Deep Purple are an English rock band formed in Hertford, Hertfordshire in 1968. The band is considered to be among the pioneers of heavy metal and modern hard rock, although their musical approach changed over the years.',
+    foundation: 1968,
+    members: ['Ian Paice', 'Roger Glover', 'Ian Gillan', 'Steve Morse', 'Don Airey'],
+    hit: 'Smoke on the water',
+    imgURL:"https://res.cloudinary.com/daxdpwqbb/image/upload/v1591970765/angular%20rocks/deep-purple_l8yxee.jpg"
+  }
 ];

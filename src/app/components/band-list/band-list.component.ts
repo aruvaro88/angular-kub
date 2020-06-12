@@ -11,15 +11,12 @@ export class BandListComponent implements OnInit {
   bands: Band[];
   selectedBand: Band;
   constructor(private bandService: BandService) {}
-  getBands(): void {
-    this.bands = this.bandService.getBands();
-  }
-  onSelect(band: Band): void {
-    this.selectedBand = band;
-    console.log(this.selectedBand.name);
-  }
 
   ngOnInit(): void {
     this.getBands();
+  }
+
+  getBands(): void {
+    this.bands = this.bandService.getBands();
   }
 }

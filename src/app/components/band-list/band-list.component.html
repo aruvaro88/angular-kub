@@ -1,12 +1,16 @@
 <div class="container">
   <div *ngFor="let band of bands">
-    <div class="card" (click)="onSelect(band)">
+    <a class="card" routerLink="/details/{{band.id}}">
       <div class="card-body">
+        <figure class="band-img">
+        <img src={{band.imgURL}} alt="photo">
+        </figure>
         <p>
           {{band.name| uppercase}}
         </p>
       </div>
-    </div>
+    </a>
   </div>
 </div>
-<app-band-details [band] = "selectedBand"></app-band-details>
+
+
