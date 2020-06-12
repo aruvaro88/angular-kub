@@ -1,0 +1,11 @@
+<div class="container">
+  <div *ngFor="let band of bands">
+    <div class="card" (click)="onSelect(band)">
+      <div class="card-body">
+        <p>
+          {{band.name| uppercase}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

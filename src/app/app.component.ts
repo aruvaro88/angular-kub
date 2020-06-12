@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { BandService } from './services/band.service';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +7,5 @@ import { BandService } from './services/band.service';
 })
 export class AppComponent {
   title = 'angular-kub';
-  bands;
-  constructor(private bandService: BandService) {
-    this.bands= bandService.getBands()
-  }
+
 }
