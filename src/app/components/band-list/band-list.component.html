@@ -1,5 +1,6 @@
 <div class="container">
-  <div *ngFor="let band of bands">
+  <input type="text" placeholder="Search band" name="searchBox" [(ngModel)]="searchBox">
+  <div *ngFor="let band of bands | filter: searchBox">
     <a class="card" routerLink="/details/{{band.id}}">
       <div class="card-body">
         <figure class="band-img">
@@ -8,6 +9,7 @@
         <p>
           {{band.name| uppercase}}
         </p>
+        <button>Remove</button>
       </div>
     </a>
   </div>
