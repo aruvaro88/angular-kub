@@ -1,20 +1,36 @@
+
 .card {
   margin-top: 10px;
-  color: white;
-  background-color: grey;
+  color: black;
+  border: 1px solid grey
 }
 .card-body{
     align-content: center;
+    display: flex;
+    padding:0;
+    align-items: center;
+    justify-content: space-between;
 }
-
+.card-content{
+  display:flex;
+  align-items:center;
+}
 .card-body p {
   margin: 0;
   padding: 0;
-  font-size: 24px;
+}
+.band-img{
+  width:50px;
+  margin:10px;
+  background-size: cover;
+}
+.band-text small{
+color: grey;
 }
 
 .card-body img {
   width: 100%;
+  
 }
 
 .search-input{

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BandService } from '../../services/band.service';
 import { Band } from '../../models/band.model';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-band-list',
@@ -15,7 +14,6 @@ export class BandListComponent implements OnInit {
   newBand: Band;
   constructor(
     private bandService: BandService,
-    private route: ActivatedRoute,
     
   ) {}
 

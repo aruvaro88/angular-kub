@@ -1,0 +1,37 @@
+<form #bandForm="ngForm" (ngSubmit)="saveBand(bandForm)">
+
+  <div class="form-group">
+    <label for="bandName">Name</label>
+    <input type="text" class="form-control" id="bandName" name="name" placeholder="Band Name" 
+    [(ngModel)]="this.bandService.selectedBand.name">
+  </div>
+  <div class="form-group">
+    <label for="bandFoundation">Foundation</label>
+    <input type="text" class="form-control" id="bandFoundation" placeholder="Foundation year"
+      [(ngModel)]="this.bandService.selectedBand.foundation">
+  </div>
+  <div class="form-group">
+    <label for="bandMembers">Members</label>
+    <input type="text" class="form-control" id="bandMembers" placeholder="Add members"
+      [(ngModel)]="this.bandService.selectedBand.members">
+  </div>
+  <div class="form-group">
+    <label for="bandHit">Hit Song</label>
+    <input type="text" class="form-control" id="bandHit" placeholder="Hit song"
+    [(ngModel)]="this.bandService.selectedBand.hit">
+  </div>
+  <div class="form-group">
+    <label for="bandHitURL">Hit Url</label>
+    <input type="text" class="form-control" id="bandHitURL" placeholder="Hit Url"
+    [(ngModel)]="this.bandService.selectedBand.hitURL">
+  </div>
+  <div class="form-group">
+    <label for="bandDescription">Description</label>
+    <input type="textarea" class="form-control" id="bandDescription" placeholder="Description"
+    [(ngModel)]="this.bandService.selectedBand.description">
+  </div>
+
+  <button type="submit" class="btn btn-dark">Submit</button>
+
+</form>
+<button class="btn btn-dark" (click)="goBack()">Back</button>

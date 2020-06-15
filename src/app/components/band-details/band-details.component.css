@@ -1,0 +1,10 @@
+.details-header {
+  height: 150px;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+
+}

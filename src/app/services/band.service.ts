@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 import { BANDS } from '../initial-bands';
 import { Band } from '../models/band.model';
+import {Observable} from "rxjs/internal/Observable"
 
 @Injectable({
   providedIn: 'root',
 })
 export class BandService {
+  public selectedBand: Band
+
   constructor() {}
   getBands() {
     return BANDS;

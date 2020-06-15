@@ -5,5 +5,6 @@ export interface Band{
     foundation: number,
     members: string[],
     hit: string,
-    imgURL: string
+    imgURL: string,
+    hitURL: string
 }

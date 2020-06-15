@@ -8,7 +8,7 @@ import { BandListComponent } from './components/band-list/band-list.component';
 import { BandDetailsComponent } from './components/band-details/band-details.component';
 import { FilterPipe } from './pipes/filter.pipes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ModalComponent } from './components/modal/modal.component';
+import { NewBandFormComponent } from './components/new-band-form/new-band-form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { ModalComponent } from './components/modal/modal.component';
     BandListComponent,
     BandDetailsComponent,
     FilterPipe,
-    ModalComponent,
+    NewBandFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

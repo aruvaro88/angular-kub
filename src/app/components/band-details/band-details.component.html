@@ -1,12 +1,24 @@
-
-  <div *ngIf="band">
+<div *ngIf="band">
+  <header class="details-header" style="background-image: url({{band.imgURL}});">
+  </header>
+  <section class="details-info">
     <h1>{{band.name}}</h1>
-    <p><strong>Foundation:</strong> {{band.foundation}}</p>
-    <h4>Description</h4>
+    <h5>Foundation:</h5>
+    <p>{{band.foundation}}</p>
+    <h5>Description</h5>
     <p>{{band.description}}</p>
+    <h5>Famous Song</h5>
+    <a href={{band.hitURL}} target="_blank">{{band.hit}}</a>
     <h4>Members</h4>
-    <ul *ngFor="let member of band.members">
+    <ul class="member-list" *ngFor="let member of band.members">
       <li>{{member}}</li>
     </ul>
+  </section>
+
+  <div class="details-buttons">
+    <button class="btn btn-danger" (click)="removeBand(band)">Remove</button>
+    <button class="btn btn-dark" (click)="goBack()">Back</button>
   </div>
-  <button (click)="goBack()">Back</button>
+
+
+</div>
