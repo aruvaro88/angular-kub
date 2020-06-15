@@ -11,18 +11,24 @@ import { ActivatedRoute } from '@angular/router';
 export class BandListComponent implements OnInit {
   bands: Band[];
   selectedBand: Band;
-  searchBox =''
+  searchBox = '';
+  newBand: Band;
   constructor(
     private bandService: BandService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    
   ) {}
 
   ngOnInit(): void {
     this.getBands();
+    console.log("app iniciada")
   }
 
   getBands(): void {
     this.bands = this.bandService.getBands();
   }
-
+  removeBand(band: Band) {
+    this.bandService.removeBand(band)
+    this.ngOnInit()
+  }
 }

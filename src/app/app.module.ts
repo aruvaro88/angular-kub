@@ -7,7 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { BandListComponent } from './components/band-list/band-list.component';
 import { BandDetailsComponent } from './components/band-details/band-details.component';
 import { FilterPipe } from './pipes/filter.pipes';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +17,9 @@ import { FormsModule } from '@angular/forms';
     BandListComponent,
     BandDetailsComponent,
     FilterPipe,
+    ModalComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

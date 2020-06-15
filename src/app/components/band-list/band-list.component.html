@@ -1,18 +1,18 @@
-<div class="container">
-  <input type="text" placeholder="Search band" name="searchBox" [(ngModel)]="searchBox">
-  <div *ngFor="let band of bands | filter: searchBox">
-    <a class="card" routerLink="/details/{{band.id}}">
-      <div class="card-body">
-        <figure class="band-img">
+<input type="text" class="search-input" placeholder="Search band" name="searchBox" [(ngModel)]="searchBox">
+<button class="btn btn-dark" data-toggle="modal" data-target="#newBandModal">Create band</button>
+<div *ngFor="let band of bands | filter: searchBox">
+  <a class="card" routerLink="/details/{{band.id}}">
+    <div class="card-body">
+      <figure class="band-img">
         <img src={{band.imgURL}} alt="photo">
-        </figure>
-        <p>
-          {{band.name| uppercase}}
-        </p>
-        <button>Remove</button>
-      </div>
-    </a>
-  </div>
+      </figure>
+      <p>
+        {{band.name| uppercase}}
+      </p>
+    </div>
+  </a>
+  <button (click)="removeBand(band)">Remove</button>
 </div>
 
 
+<app-modal></app-modal>
