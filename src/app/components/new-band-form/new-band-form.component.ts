@@ -14,7 +14,9 @@ export class NewBandFormComponent implements OnInit {
 
   constructor(private location: Location, public bandService: BandService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.bandService)
+  }
 
   saveBand(bandForm: NgForm): void {
     this.bandService.addNewBand(bandForm.value);

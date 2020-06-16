@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { BANDS } from '../initial-bands';
 import { Band } from '../models/band.model';
-import {Observable} from "rxjs/internal/Observable"
+
 
 @Injectable({
   providedIn: 'root',
 })
 export class BandService {
-  public selectedBand: Band
+  public selectedBand: Band = {}
 
   constructor() {}
   getBands() {
@@ -19,6 +19,7 @@ export class BandService {
   }
 
   addNewBand(band: Band) {
+    band.id = BANDS.length + 1
     BANDS.push(band);
   }
 

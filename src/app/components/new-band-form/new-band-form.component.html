@@ -7,27 +7,27 @@
   </div>
   <div class="form-group">
     <label for="bandFoundation">Foundation</label>
-    <input type="text" class="form-control" id="bandFoundation" placeholder="Foundation year"
+    <input type="text" class="form-control" id="bandFoundation" name="foundation" placeholder="Foundation year"
       [(ngModel)]="this.bandService.selectedBand.foundation">
   </div>
   <div class="form-group">
     <label for="bandMembers">Members</label>
-    <input type="text" class="form-control" id="bandMembers" placeholder="Add members"
+    <input type="text" class="form-control" id="bandMembers" name="members" placeholder="Add members"
       [(ngModel)]="this.bandService.selectedBand.members">
   </div>
   <div class="form-group">
     <label for="bandHit">Hit Song</label>
-    <input type="text" class="form-control" id="bandHit" placeholder="Hit song"
+    <input type="text" class="form-control" id="bandHit" name="hit" placeholder="Hit song"
     [(ngModel)]="this.bandService.selectedBand.hit">
   </div>
   <div class="form-group">
     <label for="bandHitURL">Hit Url</label>
-    <input type="text" class="form-control" id="bandHitURL" placeholder="Hit Url"
+    <input type="text" class="form-control" id="bandHitURL" name="hitURL" placeholder="Hit Url"
     [(ngModel)]="this.bandService.selectedBand.hitURL">
   </div>
   <div class="form-group">
     <label for="bandDescription">Description</label>
-    <input type="textarea" class="form-control" id="bandDescription" placeholder="Description"
+    <input type="textarea" class="form-control" id="bandDescription" name="description" placeholder="Description"
     [(ngModel)]="this.bandService.selectedBand.description">
   </div>
 
