@@ -1,37 +1,46 @@
-<form #bandForm="ngForm" (ngSubmit)="saveBand(bandForm)">
+<form #bandForm="ngForm" (ngSubmit)="saveBand(bandForm); bandForm.reset()" method="post" enctype="multipart/form-data">
 
   <div class="form-group">
     <label for="bandName">Name</label>
-    <input type="text" class="form-control" id="bandName" name="name" placeholder="Band Name" 
-    [(ngModel)]="this.bandService.selectedBand.name">
+    <input type="text" class="form-control" id="bandName" name="name" placeholder="Example: Iron Maiden"
+      [(ngModel)]="this.bandService.selectedBand.name">
   </div>
   <div class="form-group">
     <label for="bandFoundation">Foundation</label>
-    <input type="text" class="form-control" id="bandFoundation" name="foundation" placeholder="Foundation year"
+    <input type="text" class="form-control" id="bandFoundation" name="foundation" placeholder="Example: 1975"
       [(ngModel)]="this.bandService.selectedBand.foundation">
   </div>
   <div class="form-group">
     <label for="bandMembers">Members</label>
-    <input type="text" class="form-control" id="bandMembers" name="members" placeholder="Add members"
+    <input type="text" class="form-control" id="bandMembers" name="members"
+      placeholder="Example: Steve Harris, Dave Murray, Nicko McBrain, ..."
       [(ngModel)]="this.bandService.selectedBand.members">
   </div>
   <div class="form-group">
     <label for="bandHit">Hit Song</label>
-    <input type="text" class="form-control" id="bandHit" name="hit" placeholder="Hit song"
-    [(ngModel)]="this.bandService.selectedBand.hit">
+    <input type="text" class="form-control" id="bandHit" name="hit" placeholder="Example: Fear of the dark"
+      [(ngModel)]="this.bandService.selectedBand.hit">
   </div>
   <div class="form-group">
     <label for="bandHitURL">Hit Url</label>
-    <input type="text" class="form-control" id="bandHitURL" name="hitURL" placeholder="Hit Url"
-    [(ngModel)]="this.bandService.selectedBand.hitURL">
+    <input type="text" class="form-control" id="bandHitURL" name="hitURL"
+      placeholder="Example: https://open.spotify.com/track/6p8eFfPw3nQkf37aT3AkmK"
+      [(ngModel)]="this.bandService.selectedBand.hitURL">
   </div>
+  <div class="form-group">
+    <label for="bandImgURL">Image</label>
+    <input type="text" class="form-control" id="bandImgURL" name="imgURL"
+      placeholder="Example: https://res.cloudinary.com/daxdpwqbb/image/upload/v1592316077/angular%20rocks/iron-maiden_gluorl.jpg"
+      [(ngModel)]="this.bandService.selectedBand.imgURL">
+  </div>
+
   <div class="form-group">
     <label for="bandDescription">Description</label>
     <input type="textarea" class="form-control" id="bandDescription" name="description" placeholder="Description"
-    [(ngModel)]="this.bandService.selectedBand.description">
+      [(ngModel)]="this.bandService.selectedBand.description">
   </div>
-
-  <button type="submit" class="btn btn-dark">Submit</button>
-
+  <div class="form-buttons">
+    <button type="submit" class="btn btn-dark">Submit</button>
+    <button class="btn btn-dark" (click)="goBack()">Back</button>
+  </div>
 </form>
-<button class="btn btn-dark" (click)="goBack()">Back</button>

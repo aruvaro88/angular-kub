@@ -23,7 +23,6 @@ export class BandDetailsComponent implements OnInit {
   getOneBand(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.band = this.bandService.getOneBand(id);
-    console.log(this.band);
   }
   goBack(): void {
     this.location.back();

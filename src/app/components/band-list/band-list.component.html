@@ -1,5 +1,7 @@
 <input type="text" class="search-input" placeholder="Search band" name="searchBox" [(ngModel)]="searchBox">
-
+<div class="create-button">
+  <button class="btn btn-dark" routerLink="/newband">Create band</button>
+</div>
 <div class="band-list" *ngFor="let band of bands | filter: searchBox">
   <a class="card" routerLink="/details/{{band.id}}">
     <div class="card-body">
@@ -18,6 +20,3 @@
   </a>
 </div>
 
-<div class="create-button">
-  <button class="btn btn-dark" routerLink="/newband">Create band</button>
-</div>

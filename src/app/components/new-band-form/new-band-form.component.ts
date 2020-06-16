@@ -15,11 +15,13 @@ export class NewBandFormComponent implements OnInit {
   constructor(private location: Location, public bandService: BandService) { }
 
   ngOnInit(): void {
-    console.log(this.bandService)
+
   }
 
   saveBand(bandForm: NgForm): void {
+    bandForm.value.members = bandForm.value.members.split(', ')
     this.bandService.addNewBand(bandForm.value);
+    this.goBack()
   }
   goBack(): void {
     this.location.back();
