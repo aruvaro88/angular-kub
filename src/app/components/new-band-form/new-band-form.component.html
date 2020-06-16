@@ -39,8 +39,7 @@
     <input type="textarea" class="form-control" id="bandDescription" name="description" placeholder="Description"
       [(ngModel)]="this.bandService.selectedBand.description">
   </div>
-  <div class="form-buttons">
-    <button type="submit" class="btn btn-dark">Submit</button>
-    <button class="btn btn-dark" (click)="goBack()">Back</button>
-  </div>
+
+  <button type="submit" class="btn btn-dark">Submit</button>
 </form>
+<button class="btn btn-dark" (click)="goBack()">Back</button>

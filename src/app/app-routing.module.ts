@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/bandslist', pathMatch: 'full' },
   { path: 'bandslist', component: BandListComponent },
   { path: 'details/:id', component: BandDetailsComponent },
-  { path: 'newband', component: NewBandFormComponent },
+  { path: 'newband', component: NewBandFormComponent, data: {title: "form"} },
 ];
 
 @NgModule({
