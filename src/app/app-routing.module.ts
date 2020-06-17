@@ -5,10 +5,20 @@ import { BandListComponent } from './components/band-list/band-list.component';
 import { NewBandFormComponent } from './components/new-band-form/new-band-form.component';
 
 const routes: Routes = [
+  //rutas de la app, en las que se renderizan diferentes componentes segun dicha ruta
   { path: '', redirectTo: '/bandslist', pathMatch: 'full' },
-  { path: 'bandslist', component: BandListComponent },
-  { path: 'details/:id', component: BandDetailsComponent },
-  { path: 'newband', component: NewBandFormComponent, data: {title: "form"} },
+  {
+    path: 'bandslist',
+    component: BandListComponent,
+  },
+  {
+    path: 'details/:id',
+    component: BandDetailsComponent,
+  },
+  {
+    path: 'newband',
+    component: NewBandFormComponent,
+  },
 ];
 
 @NgModule({
